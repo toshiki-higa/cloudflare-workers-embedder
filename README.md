@@ -1,9 +1,14 @@
 # Experiments to run onnx on Cloudflare Stack
 
-## Prereqirements
+## Motivation
+- Testing for using a lightweight onnx model in low-cost Edge environment.
+- Mainly test for lightweight embedding model
+
+## Prerequirements
 
 - Cloudflare Workers
 - Transformers.js (v3)
+- onnxruntime-web
 
 ## Result
 
