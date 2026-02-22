@@ -9,10 +9,13 @@
 
 Options are:
 
-1. Cloudflare Workers (server-side) > ❌ (Cannot keep memory usage within 128MB.)
+1. Cloudflare Workers (server-side) > ✅ (But not working in Dev enviroment because of wasm)
 2. Service Worker on Browser (client-side) > ❌ (https://github.com/w3c/ServiceWorker/issues/1356)
 3. Web Worker on Browser (client-side) > ✅
 4. Main thread on Browser (client-side) > ✅
+
+## Limitation
+- You must keep memory usage within 128MB in Cloudflare Workers (Server Side).
 
 ## Reference
 
