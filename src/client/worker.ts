@@ -25,6 +25,11 @@ export const createWebWorkerRequest = <T, R>(worker: Worker) =>
     worker.postMessage(data)
   })
 
+// TODO: Fix issue: https://github.com/huggingface/transformers.js/pull/1510
+const baseFetch = self.fetch.bind(self);
+self.fetch = (input: RequestInfo | URL, init: RequestInit = {}) =>
+  baseFetch(input, { ...init, referrerPolicy: "no-referrer" });
+
 self.onmessage = async (event: MessageEvent<WorkerRequest>) => {
   const { type, text, model, dim, dtype, modelFileName } = event.data
 
