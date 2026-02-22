@@ -1,5 +1,7 @@
 import { Hono } from 'hono'
+import { Result } from '@praha/byethrow'
 import { renderer } from './renderer'
+import { doEmbed } from './embed'
 
 const app = new Hono()
 

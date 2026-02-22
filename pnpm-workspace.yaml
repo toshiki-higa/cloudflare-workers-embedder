@@ -1,0 +1,8 @@
+ignoredBuiltDependencies:
+  - onnxruntime-node
+  - protobufjs
+
+onlyBuiltDependencies:
+  - esbuild
+  - sharp
+  - workerd
