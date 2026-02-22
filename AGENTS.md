@@ -1,4 +1,3 @@
-
 # Communication Style
 - Always think in English; respond in Japanese.
 - Keep your responses minimal to save user reading time:
@@ -9,6 +8,7 @@
 
 # Coding Style
 - Functional Programming
+  - Result Type: @phara/byethrow
 - Always prefer simplicity over pathological correctness.
   * YAGNI
   * KISS
@@ -16,5 +16,5 @@
   * No backward-compat shims or fallback paths with cyclomatic complexity.
 
 # Tool Style
-- Use pnpm
+- Use `pnpm`
 - Prohibit to use python script
